@@ -1,0 +1,53 @@
+﻿<local:BaseKey x:Class="Zer0Key.WindowsKey"
+               xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+               xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+               xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+               xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+               xmlns:local="clr-namespace:Zer0Key"
+               mc:Ignorable="d"
+               Margin="10"               
+               Width="60"
+               Height="60"
+               x:Name="Parent"
+               RenderOptions.EdgeMode="Unspecified"
+               UseLayoutRounding="True"
+               VerticalAlignment="Center">
+
+    <Grid>
+        <Grid Background="#262626">
+            <Grid.Clip>
+                <RectangleGeometry RadiusX="10"
+                                   RadiusY="10"
+                                   Rect="0,0,60,60"/>
+            </Grid.Clip>
+
+            <UniformGrid Margin="10"
+                             Columns="2"
+                             Rows="2">
+
+                <Rectangle Fill="{StaticResource GradientBrush}" 
+                               Margin="2" 
+                               RadiusX="2" 
+                               RadiusY="2"/>
+                <Rectangle Fill="{StaticResource GradientBrush}" 
+                               Margin="2" 
+                               RadiusX="2" 
+                               RadiusY="2"/>
+                <Rectangle Fill="{StaticResource GradientBrush}" 
+                               Margin="2" 
+                               RadiusX="2" 
+                               RadiusY="2"/>
+                <Rectangle Fill="{StaticResource GradientBrush}" 
+                               Margin="2" 
+                               RadiusX="2" 
+                               RadiusY="2"/>
+
+
+            </UniformGrid>
+
+        </Grid>
+        <Border BorderBrush="{StaticResource GradientBrush}"
+                    BorderThickness="1"
+                    CornerRadius="9"/>
+    </Grid>
+</local:BaseKey>
